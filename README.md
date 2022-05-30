@@ -4,9 +4,14 @@ Crear env
 python -m venv p2env
 ```
 
-Activar env
+Activar env Linux
 ```bash
 source p2env/bin/activate
+```
+
+Activar env Windows
+```bash
+p2env\bin\Scripts\activate
 ```
 
 Instalar dependencias
