@@ -15,8 +15,11 @@ class DBConnection(object):
                                                             apellido text,
                                                             dni text PRIMARY KEY
                                                             )''')
-        #self.__cur.execute(''' INSERT INTO cliente VALUES('Dummy', 'Cliente', '123456')''')
-        #todo: crear tabla de proveedores
+        try:
+            self.__cur.execute(''' INSERT INTO cliente VALUES('Dummy', 'Cliente', '123456')''')
+        except:
+            pass
+        #todo: crear tabla de productos
         self.commit()
 
     def __execute(self, query):

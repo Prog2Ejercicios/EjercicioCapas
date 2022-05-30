@@ -35,4 +35,4 @@ class FlaskAppWrapper(object):
             return jsonify([vars(cliente)])
         except Exception as e:
             print('Error {}'.format(e))
-            return '{}'
+            return Response('', 204)
